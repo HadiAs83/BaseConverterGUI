@@ -45,16 +45,22 @@ cd "C:\Users\Hadi Ch\Desktop\BaseConverterGUI"
 javac --module-path "C:\javafx-sdk-21.0.10\lib" --add-modules javafx.controls BaseConverterGUI.java
 # مک / لینوکس (مسیر را به سیستم خود تغییر دهید)
 # javac --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls BaseConverterGUI.java
+```
 
 
-
+#### اجرای برنامه با کلاس مستقیم:
+```bash
 # ویندوز
 java --module-path "C:\javafx-sdk-21.0.10\lib" --add-modules javafx.controls BaseConverterGUI
 # مک / لینوکس
 # java --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls BaseConverterGUI
+```
 
 
+#### اجرای برنامه با فایل JAR:
+```bash
 # ویندوز
-java --module-path "C:\javafx-sdk-21.0.10\lib" --add-modules javafx.controls BaseConverterGUI
+java --module-path "C:\javafx-sdk-21.0.10\lib" --add-modules javafx.controls -jar BaseConverterGUI.jar
 # مک / لینوکس
-# java --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls BaseConverterGUI
+# java --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls -jar BaseConverterGUI.jar
+```
