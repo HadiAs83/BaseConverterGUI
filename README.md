@@ -18,19 +18,18 @@
 
 ## پیش‌نیازها
 
-- **JDK 17 یا بالاتر**  
-- **JavaFX 21** (مستقل از JDK)  
+- **JDK 21**  
+- **JavaFX 21**  
 
 > JavaFX را می‌توانید از [OpenJFX](https://openjfx.io/) دانلود کنید.
 
 ---
 
-## مسیرهای احتمالی
+## مسیرهای پروژه
 
-- مسیر کد: `path/to/your/project/BaseConverterGUI.java`  
-- مسیر JavaFX: `path/to/javafx-sdk-21/lib`
-
-> مسیرها را با مسیر واقعی سیستم خودتان جایگزین کنید.
+- مسیر کد: `C:\Users\Hadi Ch\Desktop\BaseConverterGUI\BaseConverterGUI.java`  
+- مسیر JavaFX: `C:\javafx-sdk-21.0.10\lib`  
+- فایل JAR: `C:\Users\Hadi Ch\Desktop\BaseConverterGUI\BaseConverterGUI.jar`
 
 ---
 
@@ -38,17 +37,24 @@
 
 ### ویندوز، مک و لینوکس
 
-#### کامپایل:
+#### ۱️⃣ کامپایل کد:
 
 ```bash
-cd /path/to/your/project
+cd "C:\Users\Hadi Ch\Desktop\BaseConverterGUI"
 # ویندوز
-javac --module-path "path/to/javafx-sdk-21/lib" --add-modules javafx.controls BaseConverterGUI.java
-# مک / لینوکس
+javac --module-path "C:\javafx-sdk-21.0.10\lib" --add-modules javafx.controls BaseConverterGUI.java
+# مک / لینوکس (مسیر را به سیستم خود تغییر دهید)
 # javac --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls BaseConverterGUI.java
 
 
+
 # ویندوز
-java --module-path "path/to/javafx-sdk-21/lib" --add-modules javafx.controls BaseConverterGUI
+java --module-path "C:\javafx-sdk-21.0.10\lib" --add-modules javafx.controls BaseConverterGUI
+# مک / لینوکس
+# java --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls BaseConverterGUI
+
+
+# ویندوز
+java --module-path "C:\javafx-sdk-21.0.10\lib" --add-modules javafx.controls BaseConverterGUI
 # مک / لینوکس
 # java --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls BaseConverterGUI
