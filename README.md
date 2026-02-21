@@ -1,66 +1,85 @@
 # BaseConverterGUI
 
-یک برنامه **JavaFX** برای تبدیل اعداد بین مبناهای مختلف (Base) از 2 تا 16.  
-این برنامه از اعداد منفی و حروف بزرگ/کوچک (`A-F / a-f`) پشتیبانی می‌کند و رابط کاربری فارسی با **راست‌چین** دارد.
+A **JavaFX** application for converting numbers between different bases
+(2 to 16).\
+This program supports negative numbers and both uppercase/lowercase
+letters (`A-F / a-f`).\
+It features a Persian (Farsi) right-to-left (RTL) user interface.
 
----
+------------------------------------------------------------------------
 
-## ویژگی‌ها
+## Features
 
-- پشتیبانی از اعداد منفی  
-- انتخاب مبنای ورودی و خروجی از **منوی کشویی (ComboBox)** بین 2 تا 16  
-- حروف بزرگ و کوچک معتبر (`A-F / a-f`)  
-- رابط کاربری فارسی و راست‌چین  
-- نمایش قوانین و نکات استفاده در پایین پنجره  
-- رنگ‌بندی جذاب و نتیجه واضح  
+-   Supports negative numbers\
+-   Select input and output bases using a **ComboBox** (from 2 to 16)\
+-   Accepts both uppercase and lowercase letters (`A-F / a-f`)\
+-   Persian right-to-left user interface\
+-   Displays usage rules and notes at the bottom of the window\
+-   Attractive color scheme with clear result display
 
----
+------------------------------------------------------------------------
 
-## پیش‌نیازها
+## Requirements
 
-- **JDK 21**  
-- **JavaFX 21**  
+-   **JDK 21**\
+-   **JavaFX 21**
 
-> JavaFX را می‌توانید از [OpenJFX](https://openjfx.io/) دانلود کنید.
+You can download JavaFX from the official website:\
+https://openjfx.io/
 
----
+------------------------------------------------------------------------
 
-## مسیرهای پروژه
+## Project Paths (Example)
 
-- مسیر کد: `C:\Users\Hadi Ch\Desktop\BaseConverterGUI\BaseConverterGUI.java`  
-- مسیر JavaFX: `C:\javafx-sdk-21.0.10\lib`  
-- فایل JAR: `C:\Users\Hadi Ch\Desktop\BaseConverterGUI\BaseConverterGUI.jar`
+-   Source file path:\
+    `path/to/your/project/BaseConverterGUI.java`
 
----
+-   JavaFX SDK path:\
+    `path/to/javafx-sdk/lib`
 
-## نحوه کامپایل و اجرا
+-   JAR file path:\
+    `path/to/your/project/BaseConverterGUI.jar`
 
-### ویندوز، مک و لینوکس
+> Replace the paths above with the correct paths on your system.
 
-#### ۱️⃣ کامپایل کد:
+------------------------------------------------------------------------
 
-```bash
-cd "C:\Users\Hadi Ch\Desktop\BaseConverterGUI"
-# ویندوز
-javac --module-path "C:\javafx-sdk-21.0.10\lib" --add-modules javafx.controls BaseConverterGUI.java
-# مک / لینوکس (مسیر را به سیستم خود تغییر دهید)
-# javac --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls BaseConverterGUI.java
+## Compile and Run
+
+### Windows, macOS, and Linux
+
+#### 1️ Compile the code:
+
+``` bash
+cd path/to/your/project
+
+# Windows
+javac --module-path "path\to\javafx-sdk\lib" --add-modules javafx.controls BaseConverterGUI.java
+
+# macOS / Linux (adjust the path to your system)
+# javac --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls BaseConverterGUI.java
 ```
 
+------------------------------------------------------------------------
 
-#### اجرای برنامه با کلاس مستقیم:
-```bash
-# ویندوز
-java --module-path "C:\javafx-sdk-21.0.10\lib" --add-modules javafx.controls BaseConverterGUI
-# مک / لینوکس
-# java --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls BaseConverterGUI
+#### 2️ Run the program using the compiled class:
+
+``` bash
+# Windows
+java --module-path "path\to\javafx-sdk\lib" --add-modules javafx.controls BaseConverterGUI
+
+# macOS / Linux
+# java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls BaseConverterGUI
 ```
 
+------------------------------------------------------------------------
 
-#### اجرای برنامه با فایل JAR:
-```bash
-# ویندوز
-java --module-path "C:\javafx-sdk-21.0.10\lib" --add-modules javafx.controls -jar BaseConverterGUI.jar
-# مک / لینوکس
-# java --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls -jar BaseConverterGUI.jar
+#### 3️ Run the program using the JAR file:
+
+``` bash
+# Windows
+java --module-path "path\to\javafx-sdk\lib" --add-modules javafx.controls -jar BaseConverterGUI.jar
+
+# macOS / Linux
+# java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls -jar BaseConverterGUI.jar
 ```
